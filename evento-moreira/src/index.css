@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  background-color: #000;
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+  background: #000;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+  background: #2f2f2f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+  background: #2f2f2f;
+}
+
+
+@font-face {
+  font-family: 'medium';
+  src: url('/medium.otf') format('opentype')
+}
+
+
+@font-face {
+  font-family: 'sofunky';
+  src: url('/SOFUNKYtrial.otf') format('opentype')
+}
