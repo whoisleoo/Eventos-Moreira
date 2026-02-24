@@ -1,5 +1,9 @@
 import Grainient from "../components/Granient";
 import Navbar from "../components/Navbar";
+import HorariosSection from "../components/HorariosSection";
+import GaleriaSection from "../components/GaleriaSection";
+import IngressosSection from "../components/IngressosSection";
+
 
 function Home() {
   return (
@@ -7,7 +11,7 @@ function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="home" className="relative w-full h-screen overflow-hidden">
+      <section id="home" className="relative w-full h-screen overflow-hidden mb-60 snap-y">
         <Grainient
           color1="#FF9FFC"
           color2="#5227FF"
@@ -41,6 +45,11 @@ function Home() {
             Eventos Moreira
           </h1>
 
+          <p className="text-white/85 text-lg text-center max-w-2xl leading-relaxed -mt-4">
+            A pior festa de Prudentópolis — música ao vivo, artistas nacionais
+            e uma noite horrivel pra você e seus amigos.
+          </p>
+
           <div className="flex gap-4 flex-wrap justify-center">
             <a
               href="#inscricao"
@@ -58,10 +67,9 @@ function Home() {
         </div>
       </section>
 
-      {/* Próxima seção (placeholder) */}
-      <section id="horarios" className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
-        <p className="text-white text-2xl opacity-40">aqui vai ter mais coisa</p>
-      </section>
+      <GaleriaSection />
+      <HorariosSection />
+      <IngressosSection />
     </>
   );
 }
